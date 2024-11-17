@@ -1,0 +1,86 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.information{
+    text-align:left;
+    width: calc(100% - 16px * 2);
+    margin: 16px 16px 0 16px;
+
+    @include tablet {
+        width: calc(100% - 36px * 2);
+        margin: 24px 36px 0 36px;
+        
+    }
+    @include desktop {
+        width:calc(1280px - 600px);
+        margin: 24px 0;
+    }
+}
+
+.information__title{
+    border-bottom: solid 1px $mercury;
+    margin-top: 24px;
+    padding-bottom: 16px;
+    @include tablet {
+        border:none;
+        margin-top: 36px;
+        padding-bottom: 24px;
+    }
+}
+.information__details{
+    display:flex;
+    justify-content:space-between;
+    border-bottom: solid 1px $mercury;
+    margin-top: 24px;
+    padding-bottom: 16px;
+    @include tablet {
+        margin-top: 0;
+        padding-bottom: 24px;
+    }
+}
+.information__details_left, .information__details_right{
+    @include tablet {
+        display:flex;
+    }
+}
+
+.information__details_right{
+    margin-right: 16px;
+    @include tablet {
+        margin-right:24px;
+    }
+}
+
+.information__views, .information__likes{
+    display:flex;
+}
+
+.information__channel, .information__views{
+    margin-bottom: 16px;
+    @include tablet {
+        margin-bottom:0;
+    }
+}
+
+.information__channel{
+    @include tablet {
+        margin-right: 24px;
+    }
+}
+
+.information__views_icon, .information__likes_icon{
+    margin-right: 16px;
+    @include tablet {
+        margin-right:8px;
+        margin-left:24px;
+    }
+}
+
+.information__description{
+    margin-top: 24px;
+    padding-bottom: 16px;
+    @include tablet {
+        margin-top: 36px;
+        padding-bottom: 24px;
+    }
+}

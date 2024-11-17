@@ -1,0 +1,125 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+header{
+    border-bottom: 1px solid $mercury;
+}
+
+.upload{
+    margin: 24px 16px 16px 16px;
+
+    @include tablet {
+        display: flex;
+        flex-direction:column;
+        align-items:left;
+        justify-content:space-between;
+        width: calc(100% - 24px * 2);
+        margin: 36px 24px 24px 24px;
+        
+    }
+    @include desktop {
+        width:1280px;
+        margin: 36px auto 24px auto;
+    } 
+}
+
+.upload__title{
+    margin: 0 0 16px 0;
+    @include tablet {
+    padding: 0 0 24px 0;
+    margin: 0 0 24px 0;
+    border-bottom: 1px solid $mercury;
+    }
+}
+
+.upload__img{
+    margin: 16px 0 16px 0;
+    width: 100%;
+    border-radius: 4px;
+    @include tablet {
+        width: 50%;
+    }
+    @include desktop {
+        width: 100%;
+    }
+}
+
+
+.upload__form_title{
+    padding: 0 0 0 16px;
+    height: 36px;
+    width: calc(100% - 16px);
+    @include tablet {
+        width: calc(100% - 16px);
+        height: 40px;
+    }
+}
+
+.upload__form_description{
+    padding: 0 0 0 16px;
+    height: 108px;
+    width: calc(100% - 16px);
+    @include tablet {
+        width: calc(100% - 16px);
+        height: 108px;
+        padding: 0 0 48px 16px;
+    }
+}
+
+.upload__title_video {
+    margin: 0 0 16px 0;
+}
+
+.upload__description_video {
+    margin: 0 0 16px 0;
+}
+
+.button__cancel{
+    margin: 24px 0 0 0;
+    background-color:$white;
+    @include tablet {
+        margin: 0 36px 0 0;
+    }
+    
+}
+
+.button__cancel:hover{
+    background-color: $mercury;
+    border:none;
+}
+
+.button__cancel_text{
+    color:$brainflix-blue;
+}
+
+.upload__buttons{
+    @include tablet {
+        display:flex;
+        flex-direction:row-reverse;
+    }
+}
+
+.upload__middle{
+    @include tablet {
+        border-bottom: 1px solid $mercury;
+        margin: 0 0 24px 0;
+    }
+    @include desktop {
+        display:flex;
+    } 
+}
+
+.upload__video{
+    @include desktop {
+        width:77%;
+    }
+}
+
+.upload__img_container{
+    @include desktop {
+        width:23%;
+        margin: 0 24px 0 0;
+    } 
+}
+
+

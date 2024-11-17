@@ -1,0 +1,53 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.list__container{
+    width: calc(100% - 16px * 2);
+    margin: 0 16px 16px 16px;
+
+    @include tablet {
+        width: calc(100% - 36px * 2);
+        margin: 0 36px 24px 36px;
+        
+    }
+    @include desktop {
+        width:100%;
+        margin: 24px auto;
+    }
+}
+
+.list__image{
+    width:100px;
+    height:calc(100px *9/16);
+    border-radius: 4px;
+    margin-right: 16px;
+    @include tablet {
+        margin-right:24px;
+    }
+}
+
+.list__image_container{
+    display:flex;
+    margin: 0 0 16px 0;
+
+    @include tablet {
+        margin: 0 0 24px 0;
+    }
+}
+
+
+.list__title{
+    text-align:left;
+    margin-bottom: 16px;
+    @include tablet {
+        margin-bottom: 24px;
+    }
+}
+
+.list__movie_description{
+    width:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align:left;
+}

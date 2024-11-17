@@ -1,0 +1,23 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.bottom__container{
+    @include desktop {
+        display:flex;
+        margin: 0 auto;
+        width: 1055px;
+    }
+}
+.left__container{
+    @include desktop {
+        margin: 0 24px 0 0;
+        padding: 0 24px 0 0;
+        border-right: 1px solid $mercury;
+    }
+}
+
+.right__container{
+    @include desktop {
+        margin: 36px 0 0 0;
+    }
+}
